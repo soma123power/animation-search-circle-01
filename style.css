@@ -1,0 +1,69 @@
+.arc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 10px solid #0e0ea3;
+    border-radius: 50%;
+    border-right-color: transparent ;
+    border-left-color: transparent ;
+    border-bottom-color: transparent ;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.27, -0.9, 0.58, 1);;
+    animation-iteration-count: infinite;
+    /*animation-iteration-count: cubic-bezier(0.27, -0.9, 0.58, 1);*/
+}
+.small{
+    width: 80px;
+    height: 80px;
+  
+}
+.medium{
+    width: 140px;
+    height: 140px;
+}
+.larger{
+    width: 180px;
+    height: 180px;
+
+}
+.small-1{
+    width: 80px;
+    height: 80px;
+    border-color: #8888ec;
+    border-right-color: transparent ;
+    border-left-color: transparent ;
+    border-bottom-color: transparent ;
+    animation-delay: -0.10s;
+}
+.medium-1{
+    width: 140px;
+    height: 140px;
+    border-color: #8888ec;
+    border-right-color: transparent ;
+    border-left-color: transparent ;
+    border-bottom-color: transparent ;
+    animation-delay: -0.14s;
+}
+.larger-1{
+    width: 180px;
+    height: 180px;
+    border-color: #8888ec;
+    border-right-color: transparent ;
+    border-left-color: transparent ;
+    border-bottom-color: transparent ;
+    animation-delay: -0.16s;
+}
+@keyframes rotate{
+  0%{
+
+  }
+    30%{
+        transform: translate(-50% , -50%);
+    }
+    100%{
+        transform: translate(-50% , -50%) rotate(-360deg);
+     
+    }
+}
